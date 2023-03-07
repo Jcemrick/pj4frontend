@@ -9,9 +9,7 @@ const Index = (props) => {
 
     return <>
     <div className="newExposure">
-        <Card>
-            <Card.Body>
-            <Card.Title>Create Exposure Report</Card.Title>
+        <h2>Create Exposure Report</h2>
                 <Form action='/create' method='post'>
                     <input type='text' name='incidentid' placeholder="Incident number"/>
                     <input type='datetime-local' name='startdate'/>
@@ -21,10 +19,12 @@ const Index = (props) => {
                     <input type='number' name='exposuretime' placeholder="Exposure time in hours"/>
                     <Button>Submit New Exposure</Button>
                 </Form>
-            </Card.Body>
-        </Card>
+            
     </div>
+    <div className="exposureList">
+        <h2>Current Exposures</h2>
     {incidents.map((post) => <Post post={post} key={post.id} />)}
+    </div>
     </>
 };
 
