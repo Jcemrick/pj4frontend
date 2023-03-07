@@ -7,10 +7,8 @@ export async function CreateAction({request}) {
     const newIncident = {
         incidentid: formData.get('incidentid'),
         startdate: formData.get('startdate'),
-        time: formData.get('time'),
         address: formData.get('address'),
         responsetype: formData.get('responsetype'),
-        smokepresent: formData.get('smokepresent'),
         smokecolor: formData.get('smokecolor'),
         exposuretime: formData.get('exposuretime'),
     }
@@ -32,10 +30,8 @@ export async function UpdateAction({request, params}) {
     const updateIncident = {
         incidentid: formData.get('incidentid'),
         startdate: formData.get('startdate'),
-        time: formData.get('time'),
         address: formData.get('address'),
         responsetype: formData.get('responsetype'),
-        smokepresent: formData.get('smokepresent'),
         smokecolor: formData.get('smokecolor'),
         exposuretime: formData.get('exposuretime'),
     }

@@ -17,9 +17,8 @@ const Index = (props) => {
                     <input type='text' name='responsetype' placeholder='What type of incident was this? Fire, Aid, Hazmat etc.'/>
                     <input type='text' name='smokecolor' placeholder='Smoke color & description'/>
                     <input type='number' name='exposuretime' placeholder="Exposure time in hours"/>
-                    <Button>Submit New Exposure</Button>
+                    <Button type='submit'>Submit New Exposure</Button>
                 </Form>
-            
     </div>
     <div className="exposureList">
         <h2>Current Exposures</h2>

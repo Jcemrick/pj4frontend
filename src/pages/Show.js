@@ -23,10 +23,10 @@ const Show = (props) => {
             <input type='text' name='responsetype' placeholder='What type of incident was this? Fire, Aid, Hazmat etc.' defaultValue={post.responsetype}/>
             <input type='text' name='smokecolor' placeholder='Smoke color & description' defaultValue={post.smokecolor}/>
             <input type='number' name='exposuretime' placeholder="Exposure time in hours" defaultValue={post.exposuretime}/>
-            <Button>Update Exposure</Button>
+            <Button type='submit'>Update Exposure</Button>
         </Form>
         <Form action={`/delete/${post.id}`} method='post'>
-            <Button>Delete Exposure</Button>
+            <Button type='submit'>Delete Exposure</Button>
         </Form>
         </div>
 
